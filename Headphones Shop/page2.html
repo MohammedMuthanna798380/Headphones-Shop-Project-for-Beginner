@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .members {
+            margin: 0px 0px 20px 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: auto auto;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 200px;
+        }
+
+        .members li {
+            width: 30%;
+            height: 200px;
+            float: left;
+        }
+
+        .box-img img {
+            width: 100%;
+        }
+
+        .members .clear {
+            clear: both;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a id="active" href="page2.html">About</a></li>
+                <li><a href="page3.html">Products</a></li>
+                <li><a href="page4.html">Blog</a></li>
+                <li><a href="page5.html">Contact</a></li>
+                <li><a href="page6.html">Members</a></li>
+            </ul>
+            <button id="night" onclick="night_mode()" class="toggle">Night Mode</button>
+            <button id="day" onclick="day_mode()" style="display: none;" class="toggle">day Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About Us</h1>
+        <p>We are a company that specializes in providing high-quality products to our customers. Our mission is to
+            provide the best customer service and ensure that all of our customers are satisfied with their purchases.
+        </p>
+        <h2>The Worker : </h2>
+        <ul class="members">
+            <li>
+                <div class="box-img">
+                    <img src="female-user-icon-3.jpg" alt="First Member">
+                    <p>000000</p>
+                    <p>Arwa</p>
+                </div>
+            </li>
+            <li>
+                <div class="box-img">
+                    <img src="female-user-icon-3.jpg" alt="First Member">
+                    <p>000000</p>
+                    <p>Marim</p>
+                </div>
+            </li>
+            <li>
+                <div class="box-img">
+                    <img src="female-user-icon-3.jpg" alt="First Member">
+                    <p>000000</p>
+                    <p>Nour</p>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+        <hr>
+        <button onclick="document.getElementById('hidden').style.display = 'block';" class="read-more-button">Read
+            More..</button>
+        <p id="hidden" class="hidden-text">Our selection includes headphones in various styles including over-ear,
+            on-ear,
+            and in-ear options to suit your personal preferences. We also offer headphones with a range of features
+            such as Bluetooth connectivity, touch controls, and voice assistant compatibility.
+
+            At our headphones shop, we believe that everyone deserves to enjoy their music to the fullest.
+            That's why we offer headphones at a range of price points, so you can find the perfect pair to fit your
+            budget.
+
+            Our team of knowledgeable experts is always available to answer any questions you may have and help you
+            choose
+            the right headphones for your needs. We also offer free shipping and hassle-free returns, so you can shop
+            with
+            confidence..</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Headphones Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
